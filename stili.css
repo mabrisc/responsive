@@ -1,0 +1,19 @@
+body{
+    display:flex;
+    width: 80%;
+    margin:0 auto;
+}
+
+.box{
+    background-color: blue;
+    width: 100x;
+    height: 100px; 
+}
+
+.grid{
+    background: green;
+    width: 100%;
+    display:grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+}
