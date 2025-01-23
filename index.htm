@@ -3,24 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stili.css" />
+    <link rel="stylesheet" href="stili.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="grid">
-        <div class="box">
-
-        </div>
-        <div class="box">
-
-        </div>
-        <div class="box">
-
-        </div>
-        <div class="box">
-
-        </div>
-    </div>
+    <div class="header">
+        <div class="logo"><img src="marchio_vaccarini_positivo.png" width="80px"/></div>
+        <div class="titolo"><h1>Layout responsive</h1></div>
         
+       
+    </div>
+    <div id="tmenu">
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" id="menuCheckbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <!-- 
+            We can use a label here to close upon click (when doing same page navigation), this
+            does require a slight bit of JS.
+            -->
+            <!--
+            <li>
+              <a href="#">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+              </a>
+            </li>
+            -->
+            <!-- These just close the menu -->
+            <!--
+            <li><label for="menuCheckbox"><a>Info</a></label></li>
+            <li><label for="menuCheckbox"><a>Contact</a></label></li>
+            -->
+            <!-- Or just use regular URLs -->
+            <li>
+                <a href="#" target="_blank">Home</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Contatti</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Chi siamo</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">FAQ</a>
+              </li>
+            <!--  
+            <li>
+              <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="menu">
+        <a href="">Home</a>
+        <a href="">Chi siamo</a>
+        <a href="">Contatti</a>
+        <a href="">FAQ</a>
+    </div>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ut!</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, eligendi! Cupiditate doloribus libero minus? Aspernatur, voluptate ducimus qui neque rerum vitae impedit sit tenetur corrupti id doloremque magni architecto? Unde?</div>
+        <div class="item">5</div>
+    </div>
+    <div id="sponsor">
+        <a href="">Sponsor 1</a>
+        <a href="">Sponsor 2</a>
+        <a href="">Sponsor 3</a>
+    </div>
+
+
+    <div id="footer">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
 </body>
 </html>
